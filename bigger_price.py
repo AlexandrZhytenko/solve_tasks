@@ -6,6 +6,9 @@ def bigger_price(limit, data):
         result.append(sorted(data, key=itemgetter("price"), reverse=True)[i])
     return result
 
+# def bigger_price(limit, data):
+#     return sorted(data, key=lambda x: x['price'], reverse=True)[:limit]
+
 if __name__ == "__main__":
     limit = 2
     data = [
