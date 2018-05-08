@@ -12,8 +12,12 @@
 import re
 def find_message(text):
     return "".join(re.findall(r"[A-Z]+", text))
+# or
+# find_message = lambda text: ''.join(filter(str.isupper, text))
+
+# or
+# def find_message(text):
+#     return ''.join(c for c in text if c.isupper())
 
 if __name__ == '__main__':
     print find_message("How are you? Eh, ok. Low or Lower? Ohhh.")
-    print find_message("hello world!")
-    print find_message("HELLO WORLD!!!")
