@@ -9,10 +9,6 @@
 # if we collect all of the capital letters, we get the message "HELLO".
 # print "l"
 
-# def find_message(text: str) -> str:
-#     """Find a secret message"""
-#     return ""
-
 import re
 def find_message(text):
     try:
