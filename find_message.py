@@ -11,10 +11,7 @@
 
 import re
 def find_message(text):
-    try:
-        return "".join(re.findall(r"[A-Z]+", text))
-    except TypeError:
-        return ""
+    return "".join(re.findall(r"[A-Z]+", text))
 
 if __name__ == '__main__':
     print find_message("How are you? Eh, ok. Low or Lower? Ohhh.")
